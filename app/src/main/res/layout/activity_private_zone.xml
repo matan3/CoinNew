@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.matan.private_zone.PrivateZone">
+
+    <Button
+        android:id="@+id/modifyAdvertisementBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="47dp"
+        android:text="Modify Advertisement"
+        app:layout_constraintBottom_toTopOf="@+id/list"
+        app:layout_constraintEnd_toEndOf="@+id/addAdvertisementBtn"
+        app:layout_constraintStart_toStartOf="@+id/addAdvertisementBtn"
+        app:layout_constraintTop_toBottomOf="@+id/deleteAdvertisementBtn" />
+
+    <Button
+        android:id="@+id/deleteAdvertisementBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="12dp"
+        android:text="Delete Advertisement"
+        app:layout_constraintBottom_toTopOf="@+id/modifyAdvertisementBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/addAdvertisementBtn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="57dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/modifyAdvertisementBtn" />
+
+    <Button
+        android:id="@+id/addAdvertisementBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Add Advertisement"
+        app:layout_constraintBaseline_toBaselineOf="@+id/deleteAdvertisementBtn"
+        app:layout_constraintEnd_toStartOf="@+id/deleteAdvertisementBtn"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/logoutBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="32dp"
+        android:text="Log Out"
+        app:layout_constraintBottom_toTopOf="@+id/list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/modifyAdvertisementBtn"
+        app:layout_constraintTop_toBottomOf="@+id/deleteAdvertisementBtn" />
+
+
+</android.support.constraint.ConstraintLayout>
